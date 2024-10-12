@@ -1,0 +1,54 @@
+.alphapet_container {
+    width: 80%;
+    display: flex;
+}
+.alphabet_content {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    
+    width: 20rem;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+}
+.character_alphabet-content label {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    color: var(--color-gray-200);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.learn_container_page{
+    height: auto;
+    
+}
+.defaultContent.none {
+    display: none;
+}
+
+
+
+/* ===========Media Screen Medium Device========= */
+@media screen and (max-width:1024px) {
+    .alphapet_container {
+        width: 100%;
+    }
+    .alphabet_content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ===========Media Screen Small Device========= */
+@media screen and (max-width:768px) {
+    .alphabet_content {
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        margin:0 1rem 0 2rem;
+    }
+    
+}
